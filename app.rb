@@ -17,14 +17,11 @@ class App < Sinatra::Base
     @n = params[:number].to_i
     @p = params[:phrase]
 
-    # @something = @n.times{@p}
-    @phrase = ""
+    # @phrase = ""
+    # @n.times {@phrase += @p}
+    # @phrase
 
-    @n.times {@phrase += @p}
-    # binding.pry
-
-    @phrase
-
+    "#{@p*@n}"
   end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
