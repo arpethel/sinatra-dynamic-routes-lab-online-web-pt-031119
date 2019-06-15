@@ -16,7 +16,12 @@ class App < Sinatra::Base
     @number = params[:number].to_i * 3
     @phrase = params[:phrase]
 
-    "#{@number} #{@phrase}"
+    @number.each do |phrase|
+      phrase = @phrase
+      puts phrase
+    end
+
+    # "#{@number} #{@phrase}"
 
   end
 
