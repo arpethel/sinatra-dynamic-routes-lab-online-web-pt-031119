@@ -42,11 +42,11 @@ class App < Sinatra::Base
     if params[:operation] == "+"
       @outcome = (params[:number1].to_i + params[:number2].to_i)
     elsif params[:operation] == "-"
-      @outcome = params[:number1] - params[:number2]
+      @outcome = params[:number1].to_i - params[:number2].to_i
     elsif params[:operation] == "/"
-      @outcome = params[:number1] / params[:number2]
+      @outcome = params[:number1].to_i / params[:number2].to_i
     elsif params[:operation] == "*"
-      @outcome = params[:number1] * params[:number2]
+      @outcome = params[:number1].to_i * params[:number2].to_i
     end
     "#{@outcome}"
   end
