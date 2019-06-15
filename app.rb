@@ -38,7 +38,7 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
-    @outcome = ""
+    @outcome = 0
     if params[:operation] == "+"
       @outcome = (params[:number1].to_i + params[:number2].to_i)
     elsif params[:operation] == "-"
