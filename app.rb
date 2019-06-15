@@ -23,6 +23,8 @@ class App < Sinatra::Base
 
     @p = @p.size
 
+    @p.size = params[:number]
+
 
     "#{@p}"
 
