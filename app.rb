@@ -19,7 +19,7 @@ class App < Sinatra::Base
 
     binding.pry
 
-    @n.times{puts @p}
+    return @n.times{puts @p}
 
 
 
