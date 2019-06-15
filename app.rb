@@ -18,9 +18,10 @@ class App < Sinatra::Base
     @p = params[:phrase]
 
     # @something = @n.times{@p}
+    @phrase = ""
 
-    @phrase = @n.times {@p}
-    binding.pry
+    @n.times {@p}
+    # binding.pry
 
     "#{@p*@n}"
 
