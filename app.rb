@@ -12,18 +12,18 @@ class App < Sinatra::Base
     "#{@number}"
   end
 
-  # get '/say/:number' do
-  #   # @phrase = params[:phrase]
-  #   @n = params[:number]
-  #   # "#{@n}".times {puts @phrase}
-  #   # @yes = @n.times {puts :phrase}
-  #   @n = @n.to_i
-  #   @n.times {puts "hello"}
-  #   # "#{@phrases}"
-  #
-  #   # "#{@number} #{@phrase}"
-  #
-  # end
+  get '/say/:number' do
+    # @phrase = params[:phrase]
+    @n = params[:number] + 2
+    "#{@n}"
+    # @yes = @n.times {puts :phrase}
+    # @n = @n.to_i
+    # @n.times {puts "hello"}
+    # "#{@phrases}"
+  
+    # "#{@number} #{@phrase}"
+  
+  end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     # @words = []
