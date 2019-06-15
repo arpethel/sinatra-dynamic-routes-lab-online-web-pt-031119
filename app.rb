@@ -19,7 +19,7 @@ class App < Sinatra::Base
 
     # @something = @n.times{@p}
 
-    return "#{@p*@n}"
+    "#{@p*@n}"
 
   end
 
