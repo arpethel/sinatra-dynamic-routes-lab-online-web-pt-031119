@@ -20,7 +20,7 @@ class App < Sinatra::Base
     # @something = @n.times{@p}
     @phrase = ""
 
-    @n.times {@p}
+    @n.times {@phrase += @p}
     # binding.pry
 
     "#{@p*@n}"
