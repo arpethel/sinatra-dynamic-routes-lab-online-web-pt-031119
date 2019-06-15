@@ -23,7 +23,7 @@ class App < Sinatra::Base
     @n.times {@phrase += @p}
     # binding.pry
 
-    # "#{@p*@n}"
+    @phrase
 
   end
 
