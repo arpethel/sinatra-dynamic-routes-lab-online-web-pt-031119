@@ -23,7 +23,9 @@ class App < Sinatra::Base
 
     @p = @p.size
 
-    @p.size = params[:number]
+    @n = params[:number].to_i
+
+    @p.size = @n
 
 
     "#{@p}"
