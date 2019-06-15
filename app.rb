@@ -6,4 +6,11 @@ class App < Sinatra::Base
     @user_name = params[:name]
     "#{@user_name} reversed is: #{@user_name.reverse}."
   end
+
+  get '/square/:number' do
+    @number = params[:number]
+    "#{@number} squared is: #{@number.to_i} * #{@number.to_i."
+  end
+
+
 end
