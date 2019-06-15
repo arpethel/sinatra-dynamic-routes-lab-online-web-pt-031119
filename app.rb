@@ -17,10 +17,6 @@ class App < Sinatra::Base
     @n = params[:number].to_i
     @p = params[:phrase]
 
-    # @phrase = ""
-    # @n.times {@phrase += @p}
-    # @phrase
-
     "#{@p*@n}"
   end
 
