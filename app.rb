@@ -20,7 +20,7 @@ class App < Sinatra::Base
     @p = params[:phrase]
 
 
-    "#{@p}"
+    "#{@p}".size
 
     # @n.times {puts params[:phrase]}
 
