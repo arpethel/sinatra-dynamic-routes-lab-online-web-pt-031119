@@ -40,7 +40,7 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do
     @outcome = ""
     if params[:operation] == "+"
-      @outcome = params[:number1] + params[:number2]
+      @outcome = (params[:number1] + params[:number2])
     elsif params[:operation] == "-"
       @outcome = params[:number1] - params[:number2]
     elsif params[:operation] == "/"
