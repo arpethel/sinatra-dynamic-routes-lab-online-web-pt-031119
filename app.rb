@@ -17,7 +17,11 @@ class App < Sinatra::Base
     # @n = params[:number].to_i
     # @p = params[:phrase]
 
-    @p = params[:phrase].size
+    @p = []
+
+    @p << params[:phrase]
+
+    @p = @p.size
 
 
     "#{@p}"
